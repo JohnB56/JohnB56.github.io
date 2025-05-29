@@ -5,12 +5,12 @@
  */
 const msalConfig = {
     auth: {
-         clientId: "Enter_the_Application_Id_Here",
+         clientId: "24e4a113-4aac-4c66-bcee-62495f4c7f29",
          // WORKFORCE TENANT
-         authority: "https://login.microsoftonline.com/Enter_the_Tenant_Info_Here", //  Replace the placeholder with your tenant info
+         authority: "https://login.microsoftonline.com/4c077f12-b060-4a96-9727-8b0792d27f9b", //  Replace the placeholder with your tenant info
          // EXTERNAL TENANT
          // authority: "https://Enter_the_Tenant_Subdomain_Here.ciamlogin.com/", // Replace the placeholder with your tenant subdomain
-        redirectUri: '/', // You must register this URI on App Registration. Defaults to window.location.href e.g. http://localhost:3000/
+        redirectUri: 'https://johnb56.github.io/', // You must register this URI on App Registration. Defaults to window.location.href e.g. http://localhost:3000/
         navigateToLoginRequestUrl: true, // If "true", will navigate back to the original request location before processing the auth code response.
     },
     cache: {
