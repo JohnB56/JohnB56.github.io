@@ -11,19 +11,19 @@ const app = express();
 app.use(morgan('dev'));
 
 // serve public assets.
-app.use(express.static('public'));
+app.use(express.static('docs'));
 
 // serve msal-browser module
 app.use(express.static(path.join(__dirname, "node_modules/@azure/msal-browser/lib")));
 
 // set up a route for signout.html
 app.get('/signout', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/signout.html'));
+    res.sendFile(path.join(__dirname + '/docs/signout.html'));
 });
 
 // set up a route for redirect.html
 app.get('/redirect', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/redirect.html'));
+    res.sendFile(path.join(__dirname + '/docs/redirect.html'));
 });
 
 // set up a route for index.html
