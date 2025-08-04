@@ -3,7 +3,7 @@ const signInButton = document.getElementById('signIn');
 const signOutButton = document.getElementById('signOut');
 const titleDiv = document.getElementById('title-div');
 const welcomeDiv = document.getElementById('welcome-div');
-const pTextWelcome = document.getElementById('text-webseite');
+const pTextWelcome = document.getElementById('text-webseite-signed-in');
 const tableDiv = document.getElementById('table-div');
 const tableBody = document.getElementById('table-body-div');
 
