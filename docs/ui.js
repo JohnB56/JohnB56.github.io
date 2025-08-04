@@ -2,6 +2,7 @@
 const signInButton = document.getElementById('signIn');
 const signOutButton = document.getElementById('signOut');
 const titleDiv = document.getElementById('title-div');
+const welcomeText = document.getElementById('text-not-signed-in');
 const welcomeDiv = document.getElementById('welcome-div');
 const pTextWelcome = document.getElementById('text-webseite-signed-in');
 const tableDiv = document.getElementById('table-div');
@@ -11,6 +12,7 @@ function showWelcomeMessage(account) {
     signInButton.classList.add('d-none');
     signOutButton.classList.remove('d-none');
     titleDiv.classList.add('d-none');
+	welcomeText.classList.add('d-none');
     welcomeDiv.classList.remove('d-none');
     welcomeDiv.innerHTML = `Welcome ${account.username}!`;
 	pTextWelcome.innerText = 'In der Tabelle werden die Details des Anmeldeverfahrens aufgezeigt. Es stehen die verschiedenen Informationen in der Tabelle, die rechts mit einer kleinen Beschreibung erklärt sind.';
