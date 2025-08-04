@@ -13,7 +13,7 @@ function showWelcomeMessage(account) {
     titleDiv.classList.add('d-none');
     welcomeDiv.classList.remove('d-none');
     welcomeDiv.innerHTML = `Welcome ${account.username}!`;
-	pTextWelcome.innerHTML = 'In der Tabelle werden die Details des Anmeldeverfahrens aufgezeigt. Es stehen die verschiedenen Informationen in der Tabelle, die rechts mit einer kleinen Beschreibung erklärt sind.';
+	pTextWelcome.innerText = 'In der Tabelle werden die Details des Anmeldeverfahrens aufgezeigt. Es stehen die verschiedenen Informationen in der Tabelle, die rechts mit einer kleinen Beschreibung erklärt sind.';
     updateTable(account);
 };
 
